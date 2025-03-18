@@ -27,17 +27,8 @@ _____________________________________________________________________
 # Importações Python e .NET
 import clr
 import clr
-import os, traceback,math,wpf,re
-clr.AddReference("System.Windows.Forms")
+import os, traceback,math,re
 clr.AddReference("System")
-
-from System.Collections.Generic import List
-from System.Windows.Controls import CheckBox, Button, TextBox, ListBoxItem, TextBlock, ComboBoxItem
-
-from System.Windows.Forms import Application, Form, ComboBox, Label, Button, FormStartPosition,FormBorderStyle
-from System.Drawing import Point, Size, Font,ContentAlignment
-from System.Windows import Window
-from System.Windows.Controls import ComboBoxItem
 
 # Importações Revit API
 from Autodesk.Revit.DB import *
@@ -87,7 +78,7 @@ PATH_SCRIPT = os.path.dirname(__file__)
 
 # Exemplo de uso do Output
 output = script.get_output()
-output.print_md("# Processando elementos...")
+output.print_md("## Processando elementos...")
 
 try:
     # Seu código aqui
@@ -96,7 +87,7 @@ try:
 except Exception as e:
     output.print_md("### ERRO: {}".format(str(e)))
 
-output.print_md("# Operação concluída!")
+output.print_md("## Operação concluída!")
 
 
 
