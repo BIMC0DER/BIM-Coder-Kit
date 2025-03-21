@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__title__ = "Pushbutton"
+__title__ = "Template"
 __author__ = "Seu nome"
 __version__ = "Versão 1.0"
 __doc__ = """
